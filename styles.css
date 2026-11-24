@@ -1,0 +1,32 @@
+:root { font-family: system-ui, -apple-system, Segoe UI, Arial, sans-serif; color: #18283b; background: #f3f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.contenedor { max-width: 1040px; margin: 44px auto; padding: 0 24px; }
+.encabezado { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 30px; }
+h1 { font-size: clamp(30px, 5vw, 48px); letter-spacing: -1.7px; margin: 10px 0; }
+h2 { font-size: 21px; margin: 0; }
+.etiqueta { font-weight: 800; color: #247baf; font-size: 12px; letter-spacing: 1.4px; }
+.subtitulo { color: #647488; margin: 0; }
+.insignia { background: #e6f1fb; color: #205c86; font-size: 12px; padding: 10px 14px; border-radius: 50px; white-space: nowrap; font-weight: 700; }
+.panel { background: white; padding: 26px; border-radius: 19px; box-shadow: 0 6px 22px #1c385312; margin-bottom: 22px; border: 1px solid #e5edf4; }
+.titulo-panel { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 20px; }
+.etiqueta-modo { color: #758495; font-size: 12px; }
+.campos { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 12px; }
+label { display: block; font-weight: 650; color: #34455b; font-size: 13px; margin-bottom: 14px; }
+input { display: block; margin-top: 7px; width: 100%; padding: 12px 13px; border: 1px solid #cad7e3; border-radius: 9px; font: inherit; font-weight: 400; }
+input:focus { outline: 2px solid #3d8bd8; border-color: transparent; }
+button { background: #1f77bb; color: white; border: 0; border-radius: 9px; cursor: pointer; font: inherit; font-weight: 650; padding: 11px 17px; }
+button:hover { filter: brightness(.93); }
+.acciones { display: flex; align-items: center; flex-wrap: wrap; gap: 15px; }
+.aviso { color: #73849a; font-size: 12px; }
+.secundario { color: #256895; background: #eaf3fb; font-size: 13px; }
+#mensaje { padding: 10px 13px; background: #edf5fc; border-radius: 9px; color: #4c687e; margin-bottom: 18px; font-size: 14px; }
+#mensaje.exito { color: #176340; background: #e8f6ee; }
+#mensaje.error { color: #aa2e2e; background: #fff0ee; }
+.cuadricula { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 14px; }
+.tarjeta { border: 1px solid #dfebf5; border-radius: 12px; padding: 17px; background: #fafcfe; }
+.tarjeta h3 { margin: 0 0 8px; }
+.tarjeta p { color: #617389; margin: 0 0 16px; font-size: 14px; }
+.peligro { color: #b43a3a; background: #feecec; font-size: 13px; }
+footer { text-align: center; font-size: 12px; color: #8291a4; margin: 28px 0; }
+@media (max-width: 640px) { .contenedor { margin: 22px auto; padding: 0 14px; } .encabezado { display: block; } .insignia { display: inline-block; margin-top: 16px; } .campos { grid-template-columns: 1fr; } .panel { padding: 20px; } .titulo-panel { align-items: flex-start; flex-direction: column; } }
