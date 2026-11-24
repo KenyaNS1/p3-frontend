@@ -1,6 +1,6 @@
 // Cambia TU-API por la dirección real que Render te entregue.
 // Ejemplo: https://mi-api-productos.onrender.com/api/productos
-const API_URL = "https://TU-API.onrender.com/api/productos";
+const API_URL = "https://p3-productos-seguridad.onrender.com/api/productos";
 
 const mensaje = document.getElementById("mensaje");
 const resultados = document.getElementById("resultados");
